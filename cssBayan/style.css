@@ -38,7 +38,11 @@ h1 {
 /* input */
 
 input {
-    display: none;
+    /*display: none;*/
+}
+
+.mem-input:checked ~ .photo-container {
+    height: 100%;
 }
 
 /* label */
@@ -70,6 +74,7 @@ input {
 .photo-container {
     display: flex;
     justify-content: center;
+    height: 0;
 }
 
 img {
