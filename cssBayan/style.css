@@ -1,0 +1,77 @@
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    color: #2E4F4F;
+    background-color: #CBE4DE;
+}
+
+hr {
+    background-color: #0E8388;
+    height: 2px;
+    border: 0 solid transparent;;
+}
+
+/* header */
+
+h1 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* acc */
+
+.accordion-container {
+    margin: 0 auto;
+    width: 60%;
+}
+
+/* input */
+
+input {
+    display: none;
+}
+
+/* label */
+
+.mem-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-1 {
+    width: 30px;
+    height: 2px;
+    background-color: #2C3333;
+    display: block;
+    transform: rotate(90deg);
+}
+
+
+.line-2 {
+    width: 30px;
+    height: 2px;
+    background-color: #2C3333;
+    display: block;
+    transform: translate(0, -2px) rotate(180deg);
+}
+
+/* photo */
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 50%;
+}
