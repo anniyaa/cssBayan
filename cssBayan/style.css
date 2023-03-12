@@ -36,6 +36,34 @@ h1 {
     width: 30%;
 }
 
+.mem-container:hover * {
+    cursor: pointer;
+}
+
+.mem-container:hover .photo-container {
+    max-height: 30vh;
+}
+
+.accordion-container:hover .lines {
+    visibility: initial;
+}
+
+.accordion-container:hover p {
+    color: #2C3333;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5em;
+    transition: 0.5s ease;
+}
+
+.mem-container:active p {
+    color: #0E8388;
+}
+
+
+
 /* input */
 
 input {
@@ -45,12 +73,10 @@ input {
 .mem-input:checked ~ .photo-container {
     max-height: 30vh;
 }
-.mem-input:checked + label .lines .line-1{
-    transform: rotate(45deg);
+.mem-input:checked ~ label p {
+    color: #2185D5;
 }
-.mem-input:checked + label .lines .line-2{
-    transform: translate(0, -0.1em) rotate(130deg);
-}
+
 
 /* label */
 
@@ -58,6 +84,10 @@ input {
     display: flex;
     justify-content: space-between;
     padding: 7% 2%;
+}
+
+.lines {
+    visibility: hidden;
 }
 
 .line-1 {
@@ -77,6 +107,13 @@ input {
     display: block;
     transform: translate(0, -0.1em) rotate(180deg);
     transition: 0.2s ease;
+}
+
+.mem-input:checked + label .lines .line-1{
+    transform: rotate(45deg);
+}
+.mem-input:checked + label .lines .line-2{
+    transform: translate(0, -0.1em) rotate(130deg);
 }
 
 /* photo */
