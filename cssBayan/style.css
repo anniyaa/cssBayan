@@ -35,22 +35,6 @@ h1 {
     width: 25%;
 }
 
-.mem-container:hover * {
-    cursor: pointer;
-}
-
-.mem-container:hover .photo-container {
-    max-height: 30vh;
-}
-
-.accordion-container:hover .lines {
-    visibility: initial;
-}
-
-.accordion-container:hover p {
-    color: #2C3333;
-}
-
 p {
     font-size: 1.2em;
     transition: 0.5s ease;
@@ -160,4 +144,23 @@ img {
     .accordion-container,h1 {
         width: 70%;
     }
+}
+
+@media (hover: hover) {
+    .mem-container:hover .photo-container {
+        max-height: 30vh;
+    }
+    .mem-container:hover * {
+        cursor: pointer;
+    }
+
+
+    .accordion-container:hover .lines {
+        visibility: initial;
+    }
+
+    .accordion-container:hover p {
+        color: #2C3333;
+    }
+
 }
