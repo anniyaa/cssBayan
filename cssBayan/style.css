@@ -45,11 +45,11 @@ input {
 .mem-input:checked ~ .photo-container {
     max-height: 30vh;
 }
-.mem-input:checked ~ .line-1 {
+.mem-input:checked + label .lines .line-1{
     transform: rotate(45deg);
 }
-.mem-input:checked ~ .line-2 {
-    transform: rotate(45deg);
+.mem-input:checked + label .lines .line-2{
+    transform: translate(0, -0.1em) rotate(130deg);
 }
 
 /* label */
@@ -66,6 +66,7 @@ input {
     background-color: #2C3333;
     display: block;
     transform: rotate(90deg);
+    transition: 0.2s ease-in;
 }
 
 
@@ -74,7 +75,8 @@ input {
     height: 0.1rem;
     background-color: #2C3333;
     display: block;
-    transform: translate(0, -2px) rotate(180deg);
+    transform: translate(0, -0.1em) rotate(180deg);
+    transition: 0.2s ease;
 }
 
 /* photo */
